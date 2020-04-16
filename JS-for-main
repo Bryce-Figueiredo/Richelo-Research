@@ -1,0 +1,76 @@
+<script>
+        var new_new_dbl = (function () {
+                    var count = 0;
+                    return function () {return count += 1;}})();
+                    var new_new_tpl = (function () {
+                    var count = 0;
+                    return function () {return count += 1;}})();
+            function customTitle(titleText, infoText) {
+                if (titleText !== '') {
+                    robo_clean("<div onmouseout='document.getElementById(&#34;infobox" + new_new_dbl() + "&#34;).style.display = &#34;none&#34;' id='infobox" + new_new_tpl() + "' style='top: 100px;'><p style='text-align: justify; font: 14px Arial, sans-serif; color: #000; background: #fff; height: auto; border: 3px solid #ddd; padding: 15px; width: 50%; margin: auto; line-height: 130%; visibility: visible; word-break: break-word; letter-spacing: 0px; word-spacing: 5px; display: block; left: 183px;'>" + infoText + "<br><i style='color: #0000ff; font: 18px Arial, sans-serif;'>Want to read more? This article is called: <strong>" +  titleText + "</strong>&nbsp;.&nbsp;You can search for it in the article search page.</i><br><i style='font: italic 10px &#34;Arial&#34;, sans-serif;'>Move your mouse to close this info-box.</i></p></div>");
+                } else {
+                    robo_clean("<div onmouseout='document.getElementById(&#34;infobox" + new_new_dbl() + "&#34;).style.display = &#34;none&#34;' id='infobox" + new_new_tpl() + "' style='top: 100px;'><p style='text-align: justify; font: 14px Arial, sans-serif; color: #000; background: #fff; height: auto; border: 3px solid #ddd; padding: 15px; width: 50%; margin: auto; line-height: 130%; visibility: visible; word-break: break-word; letter-spacing: 0px; word-spacing: 5px; display: block; left: 183px;'>" + infoText + "</p>");
+                }
+            }
+            function random_ad() {
+                var text = ["<img src='https://www.kasandbox.org/programming-images/landscapes/beach-at-dusk.png'>", "<img src='https://www.kasandbox.org/programming-images/landscapes/fields-of-grain.png'>"];
+                var counter = 0;
+                var elem = document.getElementById("img_text");
+                var inst = setInterval(change, 1000);
+                function change() {
+                    elem.innerHTML = text[counter];
+                    counter++;
+                    if (counter >= text.length) {
+                        counter = 0;
+                    }
+                }
+                robo_clean("<div id='ctn_not' class='robo_clean_css'>We are sorry to interupt you, this is part of our Robo-Clean operation, in which we bring up this notification at random times to make sure that our site remains completely clean of robots and spam. Thank you for your understanding! Just click the below button to close this notification. By clicking the 'Close this notification' button, you agree to our <button onclick='robo_clean_ctn()' class='ctn'>Close this notification</button></div>");
+                document.getElementById("reg_ctnr").style.display = "none";
+            }
+            var new_var = 0;
+            var new_var_2 = 0;
+            function robo_clean(robo_clean_text) {
+                document.getElementById("FEOOE_2").innerHTML = robo_clean_text;
+            }
+            function robo_clean_ctn() {
+                document.getElementById("reg_ctnr").style.display = "block";
+                document.getElementById("ctn_not").style.display = "none";
+                document.getElementById("FEOOE").style.height = "10px";
+            }
+            function about_us_js() {
+                document.getElementById("about_us_text").style.display = "block";
+                document.getElementById("about_us_text").innerHTML = "First and foremost: we are not Wikipedia. Whilst Wikipedia is a fantastic organization, it is riddled with vandalism and lies created by misguided people. But here at RR, we have a motto: <strong><em>&#34;Factum est optimum, optimum enim&#34;</strong></em>, which means <strong><em>&#34;Made by the best, for the best&#34;</em></strong>, here we feel a sense of obligation to provide you with only the most reliable information out there.";
+                new_var += 1;
+                if (new_var > 1) {
+                    document.getElementById("about_us_text").style.display = "none";
+                    new_var = 0;
+                }
+            }
+            function rai_js() {
+                document.getElementById("about_us_text").style.display = "block";
+                document.getElementById("rr_banner").style.display = "none";
+                document.getElementById("hiden_rr").style.display = "none";
+                document.getElementById("FEOOE").style.display = "none";
+                document.getElementById("about_us_text").style.textAlign = "left";
+                document.getElementById("navigation_bar").style.width = "100%";
+                document.getElementById("about_us_text").innerHTML = "First, what is an issue? An issue (at least here) is one of the following:<br>&#10230;A problem with the website, i.e.:<br>&nbsp;&nbsp;&#10230;a page not loading properly,<br>&nbsp;&nbsp;&#10230;a page not updating when it is supposed to,<br>&nbsp;&nbsp;&#10230;a suggestion not being posted,<br>&nbsp;&nbsp;&#10230;or another <em>general</em> issue.<br>&#10230;A problem with website <em>rendering</em>, there is a difference between this type of issue and the previous, please read the following description:<br>&nbsp;&nbsp;&#10230;Fonts not rendering well, i.e.,<br>&nbsp;&nbsp;&nbsp;&nbsp;&#10230;all of the fonts on the webpage are appearing the same (usually Georgia appears when there is a problem),<br>&nbsp;&nbsp;&nbsp;&nbsp;&#10230;all of the text appears the same size (usually large compared to most text on this site),<br>&nbsp;&nbsp;&nbsp;&nbsp;&#10230;or, a major indicator, all of the fonts have the same color.<br>&nbsp;&nbsp;&#10230;Or sometimes the body of the webpage is not rendering well, which can affect the website in the following ways:<br>&nbsp;&nbsp;&nbsp;&nbsp;&#10230;The website has all of the same color background,<br>&nbsp;&nbsp;&nbsp;&nbsp;&#10230;The website has overlapping text,<br>&nbsp;&nbsp;&nbsp;&nbsp;&#10230;The website has very generic, if any, colors,<br>&nbsp;&nbsp;&nbsp;&nbsp;&#10230;Or the website has little to no columns or headers or footers, or other formatting.<br>&#10230;And sometimes even some of the following:<br>&nbsp;&nbsp;&nbsp;&nbsp;&#10230;There is no bold, italic, underlined, or otherwise decorated text,<br>&nbsp;&nbsp;&nbsp;&nbsp;&#10230;Or there are no special effects on the webiste.";
+                new_var_2 += 1;
+                if (new_var_2 > 1) {
+                    document.getElementById("about_us_text").style.display = "none";
+                    document.getElementById("navigation_bar").style.width = "161px";
+                    document.getElementById("rr_banner").style.display = "block";
+                document.getElementById("hiden_rr").style.display = "block";
+                document.getElementById("FEOOE").style.display = "block";
+                    new_var_2 = 0;
+                }
+            }
+            var wina;
+            function check_ls() {
+                if (typeof(Storage) !== "undefined") {
+                    wina = window.open("", "b", "width=256,height=256,top=128,left=128");
+                    wina.document.write("THIS IS A MESSAGE FROM <em>Richelo Research</em>:<br>You have local storage enabled on your browser. This allows us to save your changes. If you were to access <em>Richelo Research</em> without this feature enabled, your changes would not be able to be made publicly visible. But don't worry, if you were to not have Local Storage enabled, we would tell you in a message like this! Have a wonderful day!<br>&nbsp;&nbsp;&mdash;All of us at RR");
+                } else {
+                    document.write("ngtg");
+                }
+            }
+        </script>
